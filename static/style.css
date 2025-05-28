@@ -1,0 +1,148 @@
+:root {
+            --primary-color: #4285f4;
+            --primary-hover: #3367d6;
+            --error-color: #d32f2f;
+            --success-color: #388e3c;
+            --border-color: #dfe1e5;
+            --text-color: #202124;
+            --light-gray: #f8f9fa;
+        }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border 0.3s, box-shadow 0.3s;
+    background-color: var(--light-gray);
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.2);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    height: 48px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+}
+
+.radio-group, .checkbox-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 8px;
+}
+
+.radio-option, .checkbox-option {
+    display: flex;
+    align-items: center;
+}
+
+.radio-option input, .checkbox-option input {
+    width: auto;
+    margin-right: 8px;
+}
+
+.error-message {
+    color: var(--error-color);
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+input:invalid, textarea:invalid {
+    border-color: var(--error-color);
+}
+
+input:invalid + .error-message,
+textarea:invalid + .error-message {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    input, textarea, select {
+        padding: 10px 12px;
+    }
+}
+.success-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .success-icon {
+            color: #4CAF50;
+            font-size: 100px;
+        }
