@@ -16,3 +16,18 @@ class FormRepository:
         session.add(submission)
         session.commit()
         session.close()
+
+# class UserRepository:
+#     def __init__(self, engine):
+#         self.engine = engine
+#         # 创建表
+#         Base.metadata.create_all(engine)
+#         self.Session = sessionmaker(bind=engine)
+
+#     def save_user(self,user_data):
+#         # 打开数据库连接
+#         session = self.Session()
+#         user_d = User(**user_data)
+#         session.add(user_d)
+#         session.commit()
+#         session.close()

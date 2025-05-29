@@ -13,3 +13,9 @@ class FormSubmission(Base):
     hobby = Column(String(50))
     email = Column(String(50))
     message = Column(Text)
+
+# class User(Base):
+#     __tablename__ = 'users'
+#     id = Column(Integer, primary_key=True)
+#     username = Column(String(50), unique=True)
+#     password = Column(String(50))

@@ -1,12 +1,12 @@
 :root {
-            --primary-color: #4285f4;
-            --primary-hover: #3367d6;
-            --error-color: #d32f2f;
-            --success-color: #388e3c;
-            --border-color: #dfe1e5;
-            --text-color: #202124;
-            --light-gray: #f8f9fa;
-        }
+    --primary-color: #4285f4;
+    --primary-hover: #3367d6;
+    --error-color: #d32f2f;
+    --success-color: #388e3c;
+    --border-color: #dfe1e5;
+    --text-color: #202124;
+    --light-gray: #f8f9fa;
+}
 
 * {
     box-sizing: border-box;
@@ -50,7 +50,9 @@ label {
     color: var(--text-color);
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     width: 100%;
     padding: 12px 15px;
     border: 1px solid var(--border-color);
@@ -60,7 +62,9 @@ input, textarea, select {
     background-color: var(--light-gray);
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
     outline: none;
     border-color: var(--primary-color);
     box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.2);
@@ -97,18 +101,21 @@ button:hover {
     background-color: var(--primary-hover);
 }
 
-.radio-group, .checkbox-group {
+.radio-group,
+.checkbox-group {
     display: flex;
     gap: 15px;
     margin-top: 8px;
 }
 
-.radio-option, .checkbox-option {
+.radio-option,
+.checkbox-option {
     display: flex;
     align-items: center;
 }
 
-.radio-option input, .checkbox-option input {
+.radio-option input,
+.checkbox-option input {
     width: auto;
     margin-right: 8px;
 }
@@ -120,12 +127,13 @@ button:hover {
     display: none;
 }
 
-input:invalid, textarea:invalid {
+input:invalid,
+textarea:invalid {
     border-color: var(--error-color);
 }
 
-input:invalid + .error-message,
-textarea:invalid + .error-message {
+input:invalid+.error-message,
+textarea:invalid+.error-message {
     display: block;
 }
 
@@ -134,15 +142,20 @@ textarea:invalid + .error-message {
         padding: 20px;
     }
 
-    input, textarea, select {
+    input,
+    textarea,
+    select {
         padding: 10px 12px;
     }
 }
+
 .success-container {
-            text-align: center;
-            margin-top: 50px;
-        }
-        .success-icon {
-            color: #4CAF50;
-            font-size: 100px;
-        }
+    text-align: center;
+    margin-top: 50px;
+}
+
+.success-icon {
+    color: #4CAF50;
+    font-size: 100px;
+}
+
