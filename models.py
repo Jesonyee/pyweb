@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 
 Base = declarative_base()
-
+#定义数据表结构
 class FormSubmission(Base):
     __tablename__ = 'form_submissions'
     id = Column(Integer, primary_key=True)

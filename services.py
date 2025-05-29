@@ -23,7 +23,9 @@ class FormService:
 
     def submit_form(self,form_data):
         try:
+            #验证提交表单数据
             validated_data = FormData(**form_data).dict()
+            # 存储表单数据到数据库
             self.repo.save_form(validated_data)
             return {"status": "success"}
         except ValueError as e:

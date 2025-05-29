@@ -21,6 +21,7 @@ def form():
             return render_template("success.html",result=result)
         except ValueError as e:
             return render_template("form.html",error=str(e))
+    #如果是GET请求
     return render_template("form.html")
 
 
