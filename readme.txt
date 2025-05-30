@@ -1,2 +1,1 @@
-This is a demo that is the first web by python
-Create a new branch is quick
+This is the first demo_web that is python based. 
