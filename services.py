@@ -14,7 +14,7 @@ class FormData(BaseModel):
     @validator('name')
  
     def validate_name(cls, name):
-        if not name.string.strip():  # 检查字符串是否为空或仅包含空格
+        if not name.strip():  # 检查字符串是否为空或仅包含空格
             raise ValueError('姓名不能为空')
         return name
     
