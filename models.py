@@ -14,8 +14,8 @@ class FormSubmission(Base):
     email = Column(String(50))
     message = Column(Text)
 
-# class User(Base):
-#     __tablename__ = 'users'
-#     id = Column(Integer, primary_key=True)
-#     username = Column(String(50), unique=True)
-#     password = Column(String(50))
+class User(Base):
+    __tablename__ = 'users'
+    id = Column(Integer, primary_key=True)
+    username = Column(String(50), unique=True,nullable=False)
+    password = Column(String(50),nullable=False)
